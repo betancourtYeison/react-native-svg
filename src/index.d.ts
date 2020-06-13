@@ -535,6 +535,7 @@ export interface JsxAST extends AST {
 }
 
 export interface UriProps extends SvgProps {
+  onLoad?: () => void;
   uri: string | null;
   override?: SvgProps;
 }
